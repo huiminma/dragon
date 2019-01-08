@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @since 2018/11/06
  */
 @RestController
+@RequestMapping("/api")
 public class HomeController {
 
     @GetMapping("/")
@@ -21,5 +22,13 @@ public class HomeController {
 
     }
 
+    @RequestMapping("/list")
+    public String list(){
+        return "list";
+    }
 
+    @RequestMapping("/find")
+    public String find(){
+        return "find";
+    }
 }
