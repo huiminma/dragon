@@ -27,5 +27,8 @@ public class HomeController {
         return "list";
     }
 
-
+    @RequestMapping("/find")
+    public String find(){
+        return "find";
+    }
 }
