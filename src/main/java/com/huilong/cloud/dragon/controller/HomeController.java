@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @since 2018/11/06
  */
 @RestController
+@RequestMapping("/api")
 public class HomeController {
 
     @GetMapping("/")
@@ -19,6 +20,11 @@ public class HomeController {
 
         return ResponseUtil.success();
 
+    }
+
+    @RequestMapping("/list")
+    public String list(){
+        return "list";
     }
 
 
